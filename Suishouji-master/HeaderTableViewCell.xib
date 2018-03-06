@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="3xl-P3-nxy" customClass="HeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3xl-P3-nxy" id="uuY-JP-RUR">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFI-Tg-k0W">
+                        <rect key="frame" x="159" y="0.0" width="1" height="106.5"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="E14-BD-lkH"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_indicator" translatesAutoresizingMaskIntoConstraints="NO" id="lkF-Un-xtT">
+                        <rect key="frame" x="156" y="89.5" width="7" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="YUg-SW-rGT"/>
+                            <constraint firstAttribute="height" constant="7" id="d1g-PW-AXU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHA-oh-9WE">
+                        <rect key="frame" x="117" y="86" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBg-h1-Jr9">
+                        <rect key="frame" x="171" y="86" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="dFI-Tg-k0W" secondAttribute="bottom" constant="-10" id="CHK-mW-NsC"/>
+                    <constraint firstItem="lkF-Un-xtT" firstAttribute="leading" secondItem="xHA-oh-9WE" secondAttribute="trailing" constant="8" id="DNt-HN-JIO"/>
+                    <constraint firstItem="dFI-Tg-k0W" firstAttribute="top" secondItem="uuY-JP-RUR" secondAttribute="topMargin" constant="-8" id="ZLv-hG-bbV"/>
+                    <constraint firstItem="VBg-h1-Jr9" firstAttribute="leading" secondItem="lkF-Un-xtT" secondAttribute="trailing" constant="8" id="dTF-8V-Csd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lkF-Un-xtT" secondAttribute="bottom" id="j7X-2S-oXE"/>
+                    <constraint firstItem="dFI-Tg-k0W" firstAttribute="centerX" secondItem="uuY-JP-RUR" secondAttribute="centerX" id="jGH-OF-0we"/>
+                    <constraint firstItem="VBg-h1-Jr9" firstAttribute="centerY" secondItem="lkF-Un-xtT" secondAttribute="centerY" id="lRT-sU-cIv"/>
+                    <constraint firstItem="lkF-Un-xtT" firstAttribute="centerX" secondItem="uuY-JP-RUR" secondAttribute="centerX" id="tYW-a5-fH6"/>
+                    <constraint firstItem="xHA-oh-9WE" firstAttribute="centerY" secondItem="lkF-Un-xtT" secondAttribute="centerY" id="v9L-Uk-rR3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="xHA-oh-9WE" id="hKH-8n-GG8"/>
+                <outlet property="totalMoneyLabel" destination="VBg-h1-Jr9" id="Vhy-sW-ezr"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="173.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="day_indicator" width="12" height="12"/>
+    </resources>
+</document>
